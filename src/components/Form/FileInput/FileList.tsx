@@ -3,8 +3,8 @@
 import { Trash2, UploadCloud } from "lucide-react";
 import { useFileInput } from "./Root";
 import { formatBytes } from "@/utils/formatBytes";
-import { useEffect, useState } from "react";
-import axios, { AxiosProgressEvent } from "axios";
+import { useEffect } from "react";
+import { useAutoAnimate } from "@formkit/auto-animate/react";
 
 type FileUploadType = {
   [fileName: string]: {
@@ -22,6 +22,10 @@ export function FileList() {
     uploadFile,
   } = useFileInput();
 
+  const [parent] = useAutoAnimate({
+    easing: "ease-in-out",
+  });
+
   useEffect(() => {
     files.forEach((file) => {
       if (!uploadProgress[file.name]) {
@@ -35,7 +39,7 @@ export function FileList() {
   }
 
   return (
-    <div className="mt-4 space-y-3">
+    <div className="mt-4 space-y-3" ref={parent}>
       {files.map((file) => {
         const { percentage, bytesSent } = uploadProgress[file.name] || {
           percentage: 0,

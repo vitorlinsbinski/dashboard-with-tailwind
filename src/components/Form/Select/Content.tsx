@@ -14,7 +14,7 @@ export function Content({ children, ...props }: ContentProps) {
         sideOffset={8}
         side="bottom"
         position="popper"
-        className="animate-slideUpAndFade group z-10 w-[var(--radix-select-trigger-width)] overflow-hidden rounded-lg border border-zinc-200 bg-white will-change-[opacity,transform]"
+        className="animate-slideDownAndFade group z-10 w-[var(--radix-select-trigger-width)] overflow-hidden rounded-lg border border-zinc-200 bg-white shadow-sm will-change-[opacity,transform]"
       >
         <ScrollArea.Root className="h-full w-full" type="auto">
           <Select.Viewport className="max-h-[300px]" asChild>
