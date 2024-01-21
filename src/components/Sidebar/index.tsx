@@ -25,7 +25,7 @@ export function Sidebar() {
 
       <Collapsible.Content
         forceMount
-        className="flex flex-1 flex-col gap-6 data-[state=closed]:hidden lg:data-[state=closed]:flex"
+        className="data-[state=closed]:animate-slideMenuUpAndFade data-[state=open]:animate-slideMenuDownAndFade flex flex-1 flex-col gap-6 data-[state=closed]:hidden lg:data-[state=closed]:flex"
       >
         <Input.Root>
           <Input.Prefix>
