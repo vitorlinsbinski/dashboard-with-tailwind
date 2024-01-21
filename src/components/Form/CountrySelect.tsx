@@ -46,7 +46,9 @@ export function CountrySelect() {
                 code={value}
               />
 
-              {countries[value]}
+              <span className="text-black dark:text-zinc-100">
+                {countries[value]}
+              </span>
             </>
           )}
         </Select.Value>

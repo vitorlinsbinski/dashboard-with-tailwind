@@ -12,7 +12,7 @@ export function SettingsTabs() {
     <Tabs.Root value={currentTab} onValueChange={setCurrentTab}>
       <ScrollArea.Root className="w-full" type="scroll">
         <ScrollArea.Viewport className="w-full overflow-x-scroll">
-          <Tabs.List className="mt-6 flex w-full items-center gap-4 border-b border-zinc-200">
+          <Tabs.List className="mt-6 flex w-full items-center gap-4 border-b border-zinc-200 dark:border-zinc-700">
             <TabItem
               title="My details"
               value="my-details"
@@ -70,7 +70,7 @@ export function SettingsTabs() {
           orientation="horizontal"
           className="flex h-0.5 translate-y-1.5 touch-none select-none flex-col bg-zinc-100"
         >
-          <ScrollArea.Thumb className="relative flex-1 rounded-lg bg-zinc-300"/>
+          <ScrollArea.Thumb className="relative flex-1 rounded-lg bg-zinc-300" />
         </ScrollArea.Scrollbar>
       </ScrollArea.Root>
     </Tabs.Root>

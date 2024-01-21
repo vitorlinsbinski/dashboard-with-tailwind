@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="antialiased">
       <body className={inter.className}>
-        <div className="min-h-screen lg:grid lg:grid-cols-app">
+        <div className="min-h-screen transition-colors duration-300 lg:grid lg:grid-cols-app dark:bg-zinc-900">
           <Sidebar />
 
           <main className="max-w-[100vw] px-8 pb-12 pt-8 lg:col-start-2 lg:px-8 lg:pt-8">
