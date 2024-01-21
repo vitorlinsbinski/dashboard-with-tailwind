@@ -104,7 +104,7 @@ export function Root(props: RootProps) {
         isAnUploadError,
       }}
     >
-      <div {...props} />;
+      <div {...props} />
     </FileInputContext.Provider>
   );
 }

@@ -75,8 +75,10 @@ export function FileItem({
         </div>
       ) : (
         <div className="flex flex-1 flex-col items-start gap-1">
-          <div className="flex flex-col">
-            <span className="text-sm font-medium text-zinc-700">{name}</span>
+          <div className="flex w-full max-w-44 flex-col">
+            <span className="mb-1 break-words text-sm font-medium text-zinc-700">
+              {name}
+            </span>
             <span className="text-sm text-zinc-500">
               {formatBytes(bytesSent)}
             </span>
