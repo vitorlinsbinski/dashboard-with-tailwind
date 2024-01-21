@@ -23,6 +23,7 @@ type FileInputContextType = {
   files: File[];
   isAllFilesUploaded: boolean;
   uploadProgress: FileUploadType;
+  isAnUploadError: boolean;
   uploadFile: (file: File) => void;
   onFilesSelected: (files: File[], multiple: boolean) => void;
   onRemoveFile: (fileName: string) => void;
@@ -35,15 +36,17 @@ export function Root(props: RootProps) {
   const [files, setFiles] = useState<File[]>([]);
   const [uploadProgress, setUploadProgress] = useState<FileUploadType>({});
   const [isAllFilesUploaded, setIsAllFilesUploaded] = useState(false);
+  const [isAnUploadError, setIsAnUploadError] = useState(false);
 
   const uploadFile = async (file: File) => {
     try {
       onAllFilesUploaded(false);
+      setIsAnUploadError(false);
 
       const formData = new FormData();
       formData.append("file", file);
 
-      await axios.post("/upload", formData, {
+      await axios.post("/api/upload", formData, {
         onUploadProgress: (progressEvent: AxiosProgressEvent) => {
           const bytesSent = progressEvent.loaded || 0;
           const totalBytes = progressEvent.total || 1;
@@ -56,6 +59,7 @@ export function Root(props: RootProps) {
         },
       });
     } catch (error) {
+      setIsAnUploadError(true);
       console.error("Error uploading file:", error);
     } finally {
       onAllFilesUploaded(true);
@@ -97,6 +101,7 @@ export function Root(props: RootProps) {
         onRemoveFile,
         isAllFilesUploaded,
         uploadFile,
+        isAnUploadError,
       }}
     >
       <div {...props} />;
