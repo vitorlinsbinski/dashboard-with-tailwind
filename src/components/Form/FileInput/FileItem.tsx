@@ -22,8 +22,8 @@ export const fileItem = tv({
       },
       error: {
         container:
-          "bg-error-25 border-error-300 dark:bg-error-500/5 dark:border-error-500/30",
-        icon: "border-error-50 bg-error-100 text-error-600 dark:bg-error-500/5 dark:border-error-500/30 dark:text-error-400",
+          "border-error-300 bg-error-25 dark:border-error-500/30 dark:bg-error-500/5",
+        icon: "border-error-50 bg-error-100 text-error-600 dark:border-error-500/30 dark:bg-error-500/5 dark:text-error-400",
         deleteButton:
           "text-error-700 hover:text-error-900 dark:text-error-400 dark:hover:text-error-300",
       },
