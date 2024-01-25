@@ -1,5 +1,5 @@
 <div align="center" style="width: 64px; height: 64px; display: flex; align-items: center; gap: 6px; margin: 0 auto;">
-  <img src="/public/tailwind-logo.png"  style="width: 100%; height: 100%;" />
+  <img src="/public/tailwind-logo.png"  style="width: 64px; height: 64px;" />
 </div>
 
 <h1 align = "center">Dashboard with Tailwind CSS</h1>
