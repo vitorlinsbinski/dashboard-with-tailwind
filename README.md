@@ -3,9 +3,11 @@
 </div>
 
 <h1 align = "center">Dashboard with Tailwind CSS</h1>
-<p>This dashboard was developed to learn about Tailwind CSS, that is a utilitary-first CSS framework to help front-end developers to build user interfaces easier and with more productivity, providing us predetermined styling classes. </p>
-<p>I learned how to implement the classes, as well as working with variants, themes, customization, breakpoints, dark mode, animations, accessibility, etc.</p>
-<p>Additionally, I applied some CSS animation libraries, such as "Framer Motion" and "Auto Animate"</p>
+<p>This dashboard was developed to learn about Tailwind CSS, a utility-first CSS framework to help front-end developers build user interfaces more easily and with more productivity, providing us with predetermined styling classes.</p>
+<p>I learned how to implement the classes and worked with variants, themes, customization, breakpoints, dark mode, animations, accessibility, etc.
+</p>
+<p>
+Additionally, I applied some CSS animation libraries, such as "Framer Motion" and "Auto Animate".</p>
 
 <div align="center">
   <div style="display: flex; justify-content: space-between; align-items: center;">
