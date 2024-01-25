@@ -1,5 +1,5 @@
 <div align="center" style="width: 64px; height: 64px; display: flex; align-items: center; gap: 6px; margin: 0 auto;">
-  <img src="/public/tailwind-logo.png"  style="width: 64px; height: 64px;" />
+  <img src="/public/tailwind-logo.png"  style="width: 64px; height: auto;" />
 </div>
 
 <h1 align = "center">Dashboard with Tailwind CSS</h1>
@@ -27,12 +27,8 @@
 - [Running the application](#running-the-application)
 - [Main Technologies](#main-technologies)
 - [Final Result](#final-result)
-  - [Login page](#login-page)
-  - [Home page](#home-page)
-  - [Explore page](#explore-page)
-  - [Profile page](#profile-page)
-  - [Book modal](#book-modal)
-- [Deploy](#deploy)
+  - [Light mode](#light-mode)
+  - [Dark mode](#dark-mode)
 - [License](#license)
 - [Author](#author)
 - [Contributing Guidelines](#contributing-guidelines)
